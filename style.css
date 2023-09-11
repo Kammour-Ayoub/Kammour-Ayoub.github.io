@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow:auto;
+}
+
+.container {
+    user-select: none;  /* Disable text selection */
+    display: flex;
+    flex-direction: column;
+    border: 4px solid black;
+    width: 385px;
+    height: 844px;
+    border-radius: 35px;
+    overflow: hidden;
+}
+  
+.homePage, .mapTrafficUpdatesPage, .tripHistoryPage, .couponListPage{
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* This will make it take up the remaining space */
+}
+
+  
+.phoneTopBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Add some padding for spacing */
+    margin-bottom: 10px;
+    color: black;
+}
+
+.digitalClock {
+    display: flex; /* Create a flex container for the clock */
+    align-items: center; /* Center the clock vertically */
+}
+
+.statusIcons {
+    display: flex; /* Create a flex container for status icons */
+}
+
+.statusIcons > div {
+    margin-left: 10px; /* Add spacing between status icons */
+}
+  
+
+
+.digitalClock h1{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.appTopSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#appLogo {
+    text-align: center; /* Center the content within its container */
+    flex: 1; /* Grow to take available space */
+}
+
+#appUserIcon,
+#appSettings {
+    cursor: pointer; 
+    display: flex; /* Make these containers flex containers as well */
+    align-items: center; /* Center their content vertically */
+}
+
+#appSettings{
+    font-size: 1.5rem;
+}
+
+.homePageTitle, .tripHistory, .mapTrafficUpdates, .couponList, .mapTrafficUpdatesTitle, .tripHistoryTitle, .couponListTitle{
+    /*border: 1px solid black;*/
+    margin: 10px 0px 15px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.homePageTitle h1, .tripHistory h1, .mapTrafficUpdates h1, .couponList h1, .mapTrafficUpdatesTitle h1, .tripHistoryTitle h1, .couponListTitle h1 {
+    font-size: 120%;
+    font-weight: bolder;
+    margin: 0px 0px 0px 50px; /* Remove default margin */
+    flex: 1; /* Grow to take available space and center horizontally */
+    text-align: center;
+    color: black;
+}
+
+#location {
+    cursor: pointer; 
+    margin-left: auto; /* Push the icon to the right */
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.weekdays {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.weekday-box {
+    cursor: pointer; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(80% / 7);
+    border: 2px solid #000;
+    padding: 0px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.special-box  {
+    background-color: #ff5733;
+    color: #000000;
+}
+
+.weekday-box:hover {
+    background-color: white;
+    color: #000000;
+}
+
+.special-box:hover {
+    background-color: #ff5733;
+    color: #000000;
+}
+
+
+.day-letter {
+    font-weight: bolder;
+    font-size: 75%;
+}
+
+.day-number {
+    font-weight: bolder;
+    font-size: 75%;
+    margin-top: 2px;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Infos {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    /*border: 2px solid #d82828;*/ /* Adding border for visualization */
+}
+
+.column1, .column2 {
+    flex: 1;
+}
+
+.column1 {
+    /*background-color: #eeff00;*/
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map{
+    width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+}
+
+.map iframe{
+    border-radius: 15px;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #00fd37;*/
+    padding: 5px;
+    margin: 0px;
+}
+
+.distanceBox{
+    background-color: #E9F6DC;
+}
+
+.scoreBox{
+    background-color: #CFF5F6;
+    margin-top: 10px;
+}
+
+.distanceBox, .scoreBox {
+    cursor: pointer; 
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.distanceBox > div, .scoreBox > div {
+    max-width: 100%;
+}
+
+
+#distanceLogo{
+    font-size: 150%;
+}
+
+#distanceName{
+    font-weight: bolder;
+}
+
+
+#scoreLogo{
+    font-size: 150%;
+}
+
+#scoreName{
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.goBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.somewhereBox {
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 5px;
+    border: 1px solid #000; /* Add border to somewhereBox */
+    width: 85%;
+}
+
+
+.goSomewhere{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.locationIcon {
+    margin-right: 5px;
+}
+
+.mic {
+    cursor: pointer; 
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Set a fixed width */
+    height: 40px; /* Set the height for mic to match somewhereBox */
+    box-sizing: border-box; /* Make sure the border doesn't affect the total size */
+}
+
+.mic:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.DistancesBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 10px 35px 10px;
+}
+
+.previousDistances {
+    width: 100%;
+    max-width: 600px;
+    padding: 0px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo-box {
+    cursor: pointer; 
+    margin: 0 10px; /* Adjusted margin for spacing */
+    flex: 1; /* Equal distribution of space */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.logo-box i {
+    font-size: 200%;
+    color: #000;
+}
+
+
+.logo-box i:hover {
+    color: #ff5733;
+}
+
+
+.logo-name {
+    margin-top: 10px; /* Adjusted margin for spacing */
+    font-weight: bolder;
+}
+
+.smallCircles {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #fff;
+    margin: 0 5px;
+}
+
+.circle.orange {
+    background-color: #ff5733;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navigationBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: auto;
+  }
+
+  
+.icon-box {
+    text-align: center;
+    cursor: pointer;
+    flex: 1;
+    padding: 0px;
+    background-color: white;
+    position: relative; /* Add this line to enable absolute positioning */
+}
+
+.icon-box .icon {
+    display: block;
+    font-size: 175%;
+    color: #000;
+}
+
+
+.underline-house, .underline-car, .underline-road, .underline-percent {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff5733;
+    height: 3px;
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Trip History CSS */
+.tripHistoryBox, .custom-icons-container {
+    margin: 0;
+    padding: 0px;
+    transition: opacity 0.75s;
+    font-size: 8px; /* Adjusted font size */
+    width: 100%; /* Ensure it takes the full width of .tripHistoryPage */
+    max-height: 495px;
+    box-sizing: border-box; /* Include border and padding in the width */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer and Edge */
+    overscroll-behavior: contain; /* Enable smooth scrolling by dragging */
+}
+
+.tripHistoryBox::-webkit-scrollbar, .custom-icons-container::-webkit-scrollbar { 
+    display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+
+.trip:hover {
+    background-color: white;
+}
+
+.trip {
+    background-color: #FFFAF2;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 100%; /* Take full width of .tripHistoryBox */
+    box-sizing: border-box; /* Include border and padding in the width */
+    font-size: 8px;
+    display: flex;
+    justify-content: space-between; /* Adjusted to space-between */
+}
+
+/* Add margin-left: auto to push .timeEnd to the far right */
+.timeEnd {
+    margin-left: auto;
+}
+
+.tripColumn {
+    margin-right: 5px;
+    padding: 0px;
+}
+
+.tripStart,
+.tripDistance,
+.tripScore,
+.tripStats,
+.timeEnd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    
+}
+
+.tripStart p,
+.timeEnd p,
+.distance,
+.score {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.tripFromTO {
+    display: flex;
+    align-items: center;
+}
+
+.tripFromTO i {
+    margin: 10px 10px 10px 2px;
+    font-size: 12px;
+    padding: 0;
+    color: #000;
+}
+
+.tripFromTO p {
+    margin: 0;
+    font-size: 10px;
+}
+
+.tripDistance {
+    background-color: #FEC39D;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0px 2px;
+}
+
+.tripScore {
+    background-color: #DFE7F3;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0px 2px;
+}
+
+.tripStats {
+    font-size: 12px;
+    padding: 0;
+    color: #000;
+}
+
+.tripStats:hover {
+    font-size: 12px;
+    padding: 0;
+    color: #ff5733;
+}
+
+.locationName {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%; /* Adjust this if needed */
+}
+
+.time, .period, .distance, .score{
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.D1 {
+    max-width: 140px; /* Set your desired maximum width here */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+
+
+
+
+
+  
+
+
+
+
+
+.custom-icons-container {
+    flex: 1; /* This will make it take up the remaining horizontal space */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+}
+
+.custom-icon-row {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-icon {
+    cursor: pointer; 
+    text-align: center;
+    min-height: 0px; /* Set a minimum height for the icons */
+    flex: 1; /* Each icon takes up 1/3 of the row width */
+    margin: 0px; /* Add margin for gap between icons */
+    padding: 0px;
+    font-size: 65px;
+}
+
+.custom-icon:hover{
+    border: 1px solid #000; /* Optional: Add a border for visual separation */
+    border-radius: 10px;
+    cursor: pointer; 
+    text-align: center;
+    min-height: 0px; /* Set a minimum height for the icons */
+    flex: 1; /* Each icon takes up 1/3 of the row width */
+    margin: 0px; /* Add margin for gap between icons */
+    padding: 0px;
+    font-size: 75px;
+    color: #ff5733;
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mapTrafficUpdatesInfos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .MapBox {
+    width: 100%;
+  }
+  
+  .tripInfo {
+    display: flex;
+    width: 100%;
+    gap: 10px; /* Adjust the gap between columns */
+    justify-content: flex-end; /* Align .tripInfo to the end of .mapTrafficUpdatesInfos */
+    margin-top: 5px;
+  }
+  
+  .carSpeedColumn, .livePointsColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: calc(15% - 5px); /* Adjust column width and gap */
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  .combinedColumn {
+    flex-grow: 1;
+    flex-basis: calc(75% - 5px); /* Adjust column width and gap */
+    display: flex;
+    flex-direction: column;
+  }
+  
+.directionsColumn, .timeToArrivalColumn {
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 0px 5px 0px 5px;
+    border: 1px solid blue; /* Adjust the border color */
+    border-radius: 10px;
+    background-color: white; /* Adjust the background color */
+  }
+  
+  .timeToArrivalColumn {
+    margin-top: 5px;
+    border: 1px solid red; /* Adjust the border color */
+    background-color: white; /* Adjust the background color */
+  }
+  
+  .carSpeedColumn{
+    border: 1px solid orange;
+  }
+  
+  .livePointsColumn {
+    flex-basis: calc(15% - 5px); /* Adjust column width and gap */
+    background-color: white;
+    border: 1px solid green;
+  }
+  
+  .speedValue, .directionValue, .timeValue, .pointsValue {
+    font-size: 100%; /* Adjust the font size as needed */
+    font-weight: bolder;
+  }
+  
+  .speedUnit, .pointsUnit {
+    font-size: 75%;
+    font-weight: bolder;
+  }
+  

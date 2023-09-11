@@ -1,0 +1,89 @@
+window.addEventListener('load', function() {
+  const firstIconBox = document.querySelector('.icon-box:first-child');
+  toggleUnderline(firstIconBox);
+});
+function toggleUnderline(element) {
+  const underlines = document.querySelectorAll('.icon-box .underline');
+  underlines.forEach(underline => {
+    if (underline.parentNode === element) {
+      underline.style.width = '40%';
+      element.classList.add('active');
+    } else {
+      underline.style.width = '0';
+      underline.parentNode.classList.remove('active');
+    }
+  });
+}
+
+
+
+
+
+function goToHistory() {
+  if(i==1){
+    var removeThis = document.querySelector('.homePage');
+  }
+  if(i==2){
+    var removeThis = document.querySelector('.mapTrafficUpdatesPage');
+  }
+  if(i==3){
+    var removeThis = document.querySelector('.tripHistoryPage');
+  }
+  if(i==4){
+    var removeThis = document.querySelector('.couponListPage');
+  }
+  addContent(removeThis, 'Road.html');
+}
+
+
+function clearHomePage(i) {
+  var removeThis = document.querySelector('.homePage');
+  if(i==2){
+    addContent(removeThis, 'Car.html');
+  }
+  if(i==3){
+    addContent(removeThis, 'Road.html');
+  }
+  if(i==4){
+    addContent(removeThis, 'Coupons.html');
+  }
+}
+
+function clearMapTrafficUpdatesPage(i) {
+  var removeThis = document.querySelector('.mapTrafficUpdatesPage');
+  if(i==1){
+    addContent(removeThis, 'Home.html');
+  }
+  if(i==3){
+    addContent(removeThis, 'Road.html');
+  }
+  if(i==4){
+    addContent(removeThis, 'Coupons.html');
+  }
+}
+
+function clearTripHistoryPage(i) {
+  var removeThis = document.querySelector('.tripHistoryPage');
+  if(i==1){
+    addContent(removeThis, 'Home.html');
+  }
+  if(i==2){
+    addContent(removeThis, 'Car.html');
+  }
+  if(i==4){
+    addContent(removeThis, 'Coupons.html');
+  }
+}
+
+function clearCouponListPage(i) {
+  var removeThis = document.querySelector('.couponListPage');
+  if(i==1){
+    addContent(removeThis, 'Home.html');
+  }
+  if(i==2){
+    addContent(removeThis, 'Car.html');
+  }
+  if(i==3){
+    addContent(removeThis, 'Road.html');
+  }
+}

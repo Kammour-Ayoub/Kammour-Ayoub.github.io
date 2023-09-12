@@ -1,5 +1,5 @@
 
-goToOtherSection(1,1);
+goToOtherSection(0,0);
 
 function goToOtherSection(i,j) {
 

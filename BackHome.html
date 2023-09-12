@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+    <div class="MyApp">  
+        <div class="appTopSection">
+          <div id="appUserIcon">
+              <img src="icons/userFatima.png" alt="Fatima" width="50px">
+          </div>
+      
+          <div id="appLogo">
+              <img src="icons/MovEaseLogo.png" alt="MovEase" width="125px">
+          </div>
+  
+          <div id="appSettings" onclick=goToOtherSection(0,0)>
+              <i class="fa-solid fa-gear" style="color: #000000;"></i>
+          </div>
+        </div>
+
+        <div class="homePage">
+            <!-- Home Page Name --> 
+          
+          <div class="homePageTitle">
+              <h1>Home Page</h1>
+              <i style="color: #000000;" id="location" class="fa-solid fa-location-crosshairs"></i>
+          </div>
+          
+          <!-- Week Days --> 
+      
+          <div class="weekdays">
+            <div class="weekday-box">
+                <div class="day-letter">S</div>
+                <div class="day-number">1</div>
+            </div>
+      
+            <div class="weekday-box">
+                <div class="day-letter">M</div>
+                <div class="day-number">2</div>
+            </div>
+            
+            <div class="weekday-box special-box">
+              <div class="day-letter">T</div>
+              <div class="day-number">3</div>
+            </div>
+      
+            <div class="weekday-box">
+              <div class="day-letter">W</div>
+              <div class="day-number">4</div>
+            </div>
+      
+            <div class="weekday-box">
+              <div class="day-letter">T</div>
+              <div class="day-number">5</div>
+            </div>
+      
+            <div class="weekday-box">
+              <div class="day-letter">F</div>
+              <div class="day-number">6</div>
+            </div>
+      
+            <div class="weekday-box">
+              <div class="day-letter">S</div>
+              <div class="day-number">7</div>
+            </div>
+          </div>
+      
+          <!-- Map + Distance + Score --> 
+      
+          <div class="Infos">
+            <div class="column1">
+                <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13293.21904542507!2d-7.666352!3d33.5973962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d330d5b79a53%3A0x351ef12936d3a318!2sSpaces%20-%20Casablanca%20Anfa%20Place!5e0!3m2!1sen!2sma!4v1694113895480!5m2!1sen!2sma" width="200px" height="260px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+      
+            <div class="column2">
+                <div class="distanceBox">
+                    <div id="distanceLogo"><i class="fa-solid fa-route"></i></div>
+                    <div id="distanceName">Distance</div>
+                    <div id="distanceValue">20 Km</div>
+                </div>
+      
+                <div class="scoreBox">
+                    <div id="scoreLogo"><i class="fa-solid fa-coins"></i></div>
+                    <div id="scoreName">Score</div>
+                    <div id="scoreValue">600 Pts</div>
+                </div>
+            </div>
+          </div>
+      
+          <!-- Get where you want + Voice option --> 
+      
+          <div class="goBox">
+            <div class="somewhereBox">
+                <div class="locationIcon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="goSomewhere">Go somewhere</div>
+            </div>
+            <div class="mic" id="mic">
+              <i class="fa-solid fa-microphone"></i>
+            </div>
+          </div>    
+      
+      
+          <!-- Previous Distances (Work, Gym, Market, etc...) --> 
+      
+          <div class="DistancesBox">
+            <div class="previousDistances">
+              <div class="logo-box">
+                <i class="fa-solid fa-briefcase"></i>
+                <div class="logo-name">Work</div>
+              </div>
+      
+              <div class="logo-box">
+                <i class="fa-solid fa-dumbbell"></i>
+                <div class="logo-name">Gym</div>
+              </div>
+      
+              <div class="logo-box">
+                <i class="fa-solid fa-shop"></i>
+                <div class="logo-name">Market</div>
+              </div>
+            </div>
+      
+            <div class="smallCircles">
+              <div class="circle orange"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </div>
+      
+          <!-- Navigation Bar --> 
+      
+          <div class="navigationBar">
+            <div class="icon-box" onclick=goToOtherSection(1,1)>
+              <div class="icon"><i id="houseIcon" class="fa-solid fa-house"></i></div>
+              <div class="underline-house"></div>
+            </div>
+        
+            <div class="icon-box" onclick=goToOtherSection(1,2)>
+              <div class="icon"><i id="carIcon" class="fa-solid fa-car"></i></div>
+              <div class="underline"></div>
+            </div>
+            
+            <div class="icon-box" onclick=goToOtherSection(1,3)>
+              <div class="icon"><i id="roadIcon" class="fa-solid fa-road"></i></div>
+              <div class="underline"></div>
+            </div>
+            
+            <div class="icon-box" onclick=goToOtherSection(1,4)>
+              <div class="icon"><i id="percentIcon" class="fa-solid fa-percent"></i></div>
+              <div class="underline"></div>
+            </div>
+          </div>  
+      
+        </div>
+        
+    </div>
+
+</body>
+</html>

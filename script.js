@@ -3,6 +3,8 @@ goToOtherSection(1,1);
 
 function goToOtherSection(i,j) {
 
+  if(i==0)
+    var removeThis = document.querySelector('.MyApp');
   if(i==1)
     var removeThis = document.querySelector('.homePage');
   if(i==2)
@@ -11,7 +13,11 @@ function goToOtherSection(i,j) {
     var removeThis = document.querySelector('.tripHistoryPage');
   if(i==4)
     var removeThis = document.querySelector('.couponListPage');
+  if(i==5)
+    var removeThis = document.querySelector('.settingsPage');
 
+  if(j==0)
+    addContent(removeThis, 'Settings.html');
   if(j==1)
     addContent(removeThis, 'Home.html');
   if(j==2)
@@ -20,7 +26,8 @@ function goToOtherSection(i,j) {
     addContent(removeThis, 'Road.html');
   if(j==4)
     addContent(removeThis, 'Coupons.html');
-
+  if(j==5)
+    addContent(removeThis, 'BackHome.html');
 }
 
 

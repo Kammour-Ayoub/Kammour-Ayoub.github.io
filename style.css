@@ -16,6 +16,17 @@ body{
     overflow: hidden;
 }
   
+.MyApp, .settingsPage{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*border: 2px solid red;*/
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* This will make it take up the remaining space */
+}
+
+
 .homePage, .mapTrafficUpdatesPage, .tripHistoryPage, .couponListPage{
     display: flex;
     flex-direction: column;
@@ -72,25 +83,27 @@ body{
 
 
 
-.appTopSection {
+.appTopSection, .settingsTopSection {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#appLogo {
+#appLogo, #settingsAppLogo {
     text-align: center; /* Center the content within its container */
     flex: 1; /* Grow to take available space */
 }
 
+#settingsLeftArrow,
 #appUserIcon,
-#appSettings {
+#appSettings, 
+#settingsLogOut {
     cursor: pointer; 
     display: flex; /* Make these containers flex containers as well */
     align-items: center; /* Center their content vertically */
 }
 
-#appSettings{
+#appSettings, #settingsLogOut {
     font-size: 1.5rem;
 }
 

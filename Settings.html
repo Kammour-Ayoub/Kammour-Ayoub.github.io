@@ -19,64 +19,44 @@
             </div>
         </div>
 
-        <div class="userInfo">
-            <div class="infoRow">
-                <div class="infoColumnA">
-                    <hr>
-                    <div class="userNameTag">Username</div>
-                    <hr>
-                    <div class="userEmailTag">Email</div>
-                    <hr>
-                </div>
-                <div class="infoColumnB">
-                    <hr>
-                    <div class="userName">Fatima</div>
-                    <hr>
-                    <div class="userEmail">Fatima@me.me</div>
-                    <hr>
-                </div>
-                <div class="infoColumnC">
-                    <hr>
-                    <div class="edit-icon"> <i class="fa-regular fa-pen-to-square"></i> </div>
-                    <hr>
-                    <div class="edit-icon"> <i class="fa-regular fa-pen-to-square"></i> </div>
-                    <hr>
-                </div>
-            </div>
-        </div>
-
         <div class="box-container">
-            <div class="language-box selectedBox">EN</div>
-            <div class="language-box">FR</div>
-            <div class="language-box">AR</div>
+            <div class="language-box selectedBox" onclick="toEN()">EN</div>
+            <div class="language-box"  onclick="toFR()">FR</div>
+            <div class="language-box" onclick="toAR()">AR</div>
         </div>
 
+
+        
         <div class="settingsElements">
             <div class="line">
+                <div class="icon"><i class="fa-solid fa-user"></i></div>
+                <div class="text" id="accountText">Account Information</div>
+            </div>
+            <div class="line">
                 <div class="icon"><i class="fa-solid fa-credit-card"></i></div>
-                <div class="text">Payment Methods</div>
+                <div class="text" id="paymentText">Payment Methods</div>
             </div>
             <div class="line">
                 <div class="icon"><i class="fa-solid fa-circle-half-stroke"></i></div>
-                <div class="text">Theme Settings</div>
+                <div class="text" id="themeText">Theme Settings</div>
             </div>
             <div class="line">
                 <div class="icon"><i class="fa-solid fa-user-secret"></i></div>
-                <div class="text">Advanced Privacy</div>
+                <div class="text" id="privacyText">Advanced Privacy</div>
             </div>
             <div class="line">
                 <div class="icon"><i class="fa-solid fa-right-from-bracket"></i></div>
-                <div class="text">Log Out</div>
+                <div class="text" id="logOutText">Log Out</div>
             </div>
         </div>
 
         <div class="saveDiscard">
             <div class="saveBox">
-                <div class="saveBoxText">Save</div>
+                <div class="saveBoxText" id="saveText">Save</div>
                 <div class="saveBoxLogo"><i class="fa-solid fa-floppy-disk"></i></div>
             </div>
             <div class="discardBox">
-                <div class="discardBoxText">Discard</div>
+                <div class="discardBoxText" id="discardText">Discard</div>
                 <div class="discardBoxLogo"><i class="fa-solid fa-eraser"></i></div>
             </div>
         </div>

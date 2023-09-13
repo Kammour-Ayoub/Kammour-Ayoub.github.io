@@ -45,6 +45,7 @@ function addContent(removable, newCode) {
 }
 
 
+
 window.addEventListener('load', calculateTime)
 function calculateTime(){
     var date = new Date();
@@ -61,3 +62,71 @@ function calculateTime(){
     setTimeout(calculateTime, 200);
 }
 
+
+function chnageBoxStyle(languageNumber) {
+  var selectedElement = document.querySelector('.language-box.selectedBox');
+  if (selectedElement) {
+    selectedElement.classList.remove('selectedBox');
+  }
+  var languageElement = document.querySelector('.language-box:nth-child(' + languageNumber + ')');
+  languageElement.classList.add('selectedBox');
+}
+
+
+function toEN() {
+  var account = "Account Information";
+  var payment = "Payment Methods";
+  var theme = "Theme Settings";
+  var privacy = "Advanced Privacy";
+  var logOut = "Log Out";
+  var saveText = "Save";
+  var discard = "Discard";
+
+  document.getElementById("accountText").innerHTML = account;
+  document.getElementById("paymentText").innerHTML = payment;
+  document.getElementById("themeText").innerHTML = theme;
+  document.getElementById("privacyText").innerHTML = privacy;
+  document.getElementById("logOutText").innerHTML = logOut;
+  document.getElementById("saveText").innerHTML = saveText;
+  document.getElementById("discardText").innerHTML = discard;
+  chnageBoxStyle(1); 
+}
+
+function toFR() {
+  var account = "Informations du Compte";
+  var payment = "Méthodes de Paiement";
+  var theme = "Paramètres du Thème";
+  var privacy = "Confidentialité Avancée";
+  var logOut = "Se Déconnecter";
+  var saveText = "Sauvegarder";
+  var discard = "Abandonner";
+
+  document.getElementById("accountText").innerHTML = account;
+  document.getElementById("paymentText").innerHTML = payment;
+  document.getElementById("themeText").innerHTML = theme;
+  document.getElementById("privacyText").innerHTML = privacy;
+  document.getElementById("logOutText").innerHTML = logOut;
+  document.getElementById("saveText").innerHTML = saveText;
+  document.getElementById("discardText").innerHTML = discard;
+  chnageBoxStyle(2); 
+
+}
+
+function toAR() {
+  var account = "معلومات الحساب";
+  var payment = "وسائل الدفع";
+  var theme = "إعدادات القالب";
+  var privacy = "الخصوصية المتقدمة";
+  var logOut = "تسجيل الخروج";
+  var saveText = "حفظ";
+  var discard = "تجاهل";
+
+  document.getElementById("accountText").innerHTML = account;
+  document.getElementById("paymentText").innerHTML = payment;
+  document.getElementById("themeText").innerHTML = theme;
+  document.getElementById("privacyText").innerHTML = privacy;
+  document.getElementById("logOutText").innerHTML = logOut;
+  document.getElementById("saveText").innerHTML = saveText;
+  document.getElementById("discardText").innerHTML = discard;
+  chnageBoxStyle(3); 
+}

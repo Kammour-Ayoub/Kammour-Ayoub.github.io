@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-  
+
+:root {
+    --myOrange: #ff5733;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     overflow:auto;
@@ -173,7 +177,7 @@ body{
 }
 
 .special-box  {
-    background-color: #ff5733;
+    background-color: var(--myOrange);
     color: #000000;
 }
 
@@ -183,7 +187,7 @@ body{
 }
 
 .special-box:hover {
-    background-color: #ff5733;
+    background-color: var(--myOrange);
     color: #000000;
 }
 
@@ -411,7 +415,7 @@ body{
 
 
 .logo-box i:hover {
-    color: #ff5733;
+    color: var(--myOrange);
 }
 
 
@@ -436,7 +440,7 @@ body{
 }
 
 .circle.orange {
-    background-color: #ff5733;
+    background-color: var(--myOrange);
 }
 
 
@@ -486,7 +490,7 @@ body{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ff5733;
+    background-color: var(--myOrange);
     height: 3px;
     width: 40%;
 }
@@ -618,7 +622,7 @@ body{
 .tripStats:hover {
     font-size: 12px;
     padding: 0;
-    color: #ff5733;
+    color: var(--myOrange);
 }
 
 .locationName {
@@ -674,6 +678,7 @@ body{
     margin: 0px; /* Add margin for gap between icons */
     padding: 0px;
     font-size: 65px;
+    color: #000;
 }
 
 .custom-icon:hover{
@@ -686,7 +691,7 @@ body{
     margin: 0px; /* Add margin for gap between icons */
     padding: 0px;
     font-size: 75px;
-    color: #ff5733;
+    color: var(--myOrange);
     background-color: #000;
 }
 
@@ -749,25 +754,25 @@ body{
     flex-grow: 1;
     flex-basis: 100%;
     padding: 0px 5px 0px 5px;
-    border: 1px solid blue; /* Adjust the border color */
+    border: 1px solid var(--myOrange); /* Adjust the border color */
     border-radius: 10px;
     background-color: white; /* Adjust the background color */
   }
   
   .timeToArrivalColumn {
     margin-top: 5px;
-    border: 1px solid red; /* Adjust the border color */
+    border: 1px solid var(--myOrange); /* Adjust the border color */
     background-color: white; /* Adjust the background color */
   }
   
   .carSpeedColumn{
-    border: 1px solid orange;
+    border: 1px solid var(--myOrange);
   }
   
   .livePointsColumn {
     flex-basis: calc(15% - 5px); /* Adjust column width and gap */
     background-color: white;
-    border: 1px solid green;
+    border: 1px solid var(--myOrange);
   }
   
   .speedValue, .directionValue, .timeValue, .pointsValue {
@@ -796,7 +801,7 @@ body{
 .userInfo {
     text-align: center;
     margin-bottom: 10px;
-    font-size: 1.15rem;
+    font-size: 1.05rem;
 }
 
 .infoRow {
@@ -830,6 +835,10 @@ body{
     color: #000;
 }
 
+.edit-icon:hover{
+    color: var(--myOrange);
+}
+
 hr {
     margin: 4px 0 4px 0;
     padding: 1px;
@@ -845,6 +854,7 @@ hr {
 .box-container {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 0px;
     margin-top: 20px;
 }
 
@@ -864,12 +874,12 @@ hr {
 
 .language-box:hover {
     color: white;
-    background-color: #ff5733;
+    background-color: var(--myOrange);
 }
 
 .selectedBox {
     color: white;
-    background-color: #ff5733;
+    background-color: var(--myOrange);
 }
 
 
@@ -878,7 +888,7 @@ hr {
 
 
 .settingsElements {
-    max-width: 600px; /* Set a maximum width for the container */
+    width: 350px; /* Set a maximum width for the container */
     margin: 5px auto; /* Center the container */
 }
 
@@ -888,7 +898,7 @@ hr {
     display: flex;
     align-items: center;
     margin: 30px 0;
-    width: 300px;
+    width: auto;
     font-size: 1.15rem;
     padding: 10px 10px;
     border-radius: 10px;
@@ -896,7 +906,7 @@ hr {
 
 .line:hover {
     color: white;
-    background-color: #ff5733;
+    background-color: var(--myOrange);
 }
 
 
@@ -908,13 +918,14 @@ hr {
 
 .line .text{
     font-weight: bold;
+    font-size: 1rem;
 }
 
 
 .saveDiscard {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 5px;
+    justify-content: space-around;
+    margin-top: 15px;
 }
 
 .saveBox, .discardBox {
@@ -922,13 +933,16 @@ hr {
     border: 2px solid #000;
     border-radius: 10px;
     font-weight: bold;
-    width: 100px; /* Set a fixed width for the square */
+    width: auto; /* Adjust the width as needed */
     margin: 0 5px; /* Adjust margin as needed */
     padding: 10px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .saveBoxLogo, .discardBoxLogo{
@@ -937,5 +951,7 @@ hr {
 
 .saveBox:hover, .discardBox:hover {
     color: white;
-    background-color: #ff5733;
+    background-color: var(--myOrange);
 }
+
+

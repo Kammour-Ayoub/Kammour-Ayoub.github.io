@@ -111,6 +111,15 @@ body{
     font-size: 1.5rem;
 }
 
+#appSettings{
+    color: #000;
+}
+
+#appSettings:hover{
+    color: var(--myOrange);
+}
+
+
 .homePageTitle, .tripHistory, .mapTrafficUpdates, .couponList, .mapTrafficUpdatesTitle, .tripHistoryTitle, .couponListTitle, .redeemListTitle{
     /*border: 1px solid black;*/
     margin: 10px 0px 15px 0px;

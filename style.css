@@ -983,7 +983,10 @@ hr {
     border: 1px solid black;
     border-radius: 10px;
     text-align: center;
+    color: black;
 }
+
+
 
 .redeemOffer:hover {
     background-color: #000;

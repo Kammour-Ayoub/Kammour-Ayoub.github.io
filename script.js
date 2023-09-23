@@ -1,4 +1,4 @@
-goToOtherSection(1,7);
+goToOtherSection(1,6);
 
 function goToOtherSection(i,j) {
 

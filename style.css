@@ -31,7 +31,7 @@ body{
 }
 
 
-.homePage, .mapTrafficUpdatesPage, .tripHistoryPage, .couponListPage, .redeemListPage{
+.homePage, .mapTrafficUpdatesPage, .tripHistoryPage, .couponListPage, .redeemListPage, .myCouponPage{
     display: flex;
     flex-direction: column;
     flex: 1; /* This will make it take up the remaining space */
@@ -120,14 +120,14 @@ body{
 }
 
 
-.homePageTitle, .tripHistory, .mapTrafficUpdates, .couponList, .mapTrafficUpdatesTitle, .tripHistoryTitle, .couponListTitle, .redeemListTitle{
+.homePageTitle, .tripHistory, .mapTrafficUpdates, .couponList, .mapTrafficUpdatesTitle, .tripHistoryTitle, .couponListTitle, .redeemListTitle, .myCouponTitle{
     /*border: 1px solid black;*/
     margin: 10px 0px 15px 0px;
     display: flex;
     align-items: center;
 }
 
-.homePageTitle h1, .tripHistory h1, .mapTrafficUpdates h1, .couponList h1, .mapTrafficUpdatesTitle h1, .tripHistoryTitle h1, .couponListTitle h1, .redeemListTitle h1 {
+.homePageTitle h1, .tripHistory h1, .mapTrafficUpdates h1, .couponList h1, .mapTrafficUpdatesTitle h1, .tripHistoryTitle h1, .couponListTitle h1, .redeemListTitle h1, .myCouponTitle h1 {
     font-size: 120%;
     font-weight: bolder;
     margin: 0px 0px 0px 50px; /* Remove default margin */
@@ -957,13 +957,6 @@ hr {
 }
 
 
-
-
-
-
-
-
-
 .redeemFood {
     max-height: 495px; /* Set a max height for scrollability */
     overflow-y: auto; /* Enable vertical scrolling */
@@ -1009,3 +1002,79 @@ hr {
 .redeemFood::-webkit-scrollbar {
     display: none;
   }
+
+
+
+/*****************************************************************/
+
+
+.myCoupon {
+    border-radius: 25px;
+    background: conic-gradient(at 95% 0%, orange, var(--myOrange));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    margin: 5px 0px 5px 0px;
+    padding: 0px 0px 40px 0px;
+}
+
+.couponBox {
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    padding: 5px;
+    margin: 5px;
+}
+
+.myCouponCode{
+    font-weight: bold;
+    color: #000;
+    font-size: 1rem;
+}
+
+
+.myQR{
+    padding: 10px;
+}
+
+.myQR img{
+    width: 150px;
+}
+
+
+.myCouponIcon{
+    color: black;
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: 98%;
+    border-radius: 25px;
+}
+
+.myCouponIcon i{
+    font-size: 2rem;
+}
+
+
+/*************************************************************/
+.nearestDistances {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 35px 10px 15px 10px;
+}
+
+.nearestDistancesBar {
+    width: 100%;
+    max-width: 600px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -1,4 +1,4 @@
-goToOtherSection(1,6);
+goToOtherSection(1,7);
 
 function goToOtherSection(i,j) {
 
@@ -16,6 +16,8 @@ function goToOtherSection(i,j) {
     var removeThis = document.querySelector('.settingsPage');
   if(i==6)
     var removeThis = document.querySelector('.redeemListPage');
+  if(i==7)
+    var removeThis = document.querySelector('.myCouponPage');
 
   if(j==0)
     addContent(removeThis, 'Settings.html');
@@ -31,6 +33,8 @@ function goToOtherSection(i,j) {
     addContent(removeThis, 'BackHome.html');
   if(j==6)
     addContent(removeThis, 'RedeemFood.html');
+  if(j==7)
+    addContent(removeThis, 'MyCoupon.html');
 }
 
 

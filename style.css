@@ -756,25 +756,19 @@ body{
     flex-grow: 1;
     flex-basis: 100%;
     padding: 0px 5px 0px 5px;
-    border: 1px solid var(--myOrange); /* Adjust the border color */
     border-radius: 10px;
     background-color: white; /* Adjust the background color */
   }
   
   .timeToArrivalColumn {
     margin-top: 5px;
-    border: 1px solid var(--myOrange); /* Adjust the border color */
     background-color: white; /* Adjust the background color */
   }
   
-  .carSpeedColumn{
-    border: 1px solid var(--myOrange);
-  }
   
   .livePointsColumn {
     flex-basis: calc(15% - 5px); /* Adjust column width and gap */
     background-color: white;
-    border: 1px solid var(--myOrange);
   }
   
   .speedValue, .directionValue, .timeValue, .pointsValue {
@@ -1080,4 +1074,11 @@ hr {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+
+.carSpeedColumn, .directionsColumn, .timeToArrivalColumn, .livePointsColumn{
+    background: conic-gradient(from -0.9turn at bottom right, deeppink, cyan, rebeccapurple);
+    color: white;
+    text-align: center;
 }
